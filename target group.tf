@@ -9,7 +9,7 @@ resource "aws_lb_target_group" "tg" {
 
   health_check {
     path = "/"
-    port = "traffic-port"
+    matcher = "200"
   }
 }
 
